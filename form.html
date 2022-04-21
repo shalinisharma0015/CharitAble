@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/form.css">
+          <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<div class="outer">
+    <div class="background">
+<div class="header">
+<h1>TWAIN CREATIVE FORM</h1>
+</div><!--header-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+<div class="SignIn">
+<h2>SIGN IN NOW</h2>
+    <form class="needs-validation" novalidate>
+        <div class="form-group">
+    <label>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+    <input type="email" placeholder="E-MAIL"  required>
+    <div class="invalid-feedback">Please fill out this field.</div>
+</label>
+</div>
+
+<div class="form-group">
+    <label>
+    <i class="fa fa-key" aria-hidden="true"></i>
+<input type="password" placeholder="Password" required>
+<div class="invalid-feedback">Please fill out this field.</div>
+</label>
+
+
+<div class="SignInbtn">
+<button>SIGN IN</button>
+</div><!--SignInbtn-->
+<h5>Forget Password ?</h5>
+<h6>(or)</h6>
+<div class="social">
+<i class="fa fa-facebook-square"></i>
+<i class="fa fa-twitter-square" ></i>
+<i class="fa fa-google-plus-square"></i>
+</div><!--social-->
+</form>
+</div>
+</div><!--Signin-->
+        </div><!--col1-->
+        <div class="col-md-6">
+<div class="SignUp">
+<h2>SIGN UP NOW</h2>
+
+<form  class="needs-validation" novalidate>
+    <div class="form-group">
+    <label>
+        <i class="fa fa-user"></i>
+    <input type="text" placeholder="User Name" required>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    </label>
+   </div>
+    
+   <div class="form-group">
+    <label>
+        <i class="fa fa-envelope" aria-hidden="true" ></i>
+    <input type="email" placeholder="E-MAIL" required>
+    <div class="invalid-feedback">Please fill out this field.</div>
+</label>
+
+<div class="form-group">
+    <label>
+    <i class="fa fa-key" aria-hidden="true" ></i>
+<input type="password" placeholder="Password" required>
+<div class="invalid-feedback">Please fill out this field.</div>
+</label>
+</div>
+
+<div class="form-group">
+<label>
+    <i class="fa fa-key" aria-hidden="true"></i>
+<input type="password" placeholder="Confirm Password" required>
+<div class="invalid-feedback">Please fill out this field.</div>
+</label>
+</div>
+<div class="SignUpbtn">
+<button>SIGN UP</button>
+</div><!--SignUpbtn-->
+</form>
+</div>
+</div><!--Signup-->
+        </div><!--col2-->
+    </div><!--row-->
+</div><!--container-->
+<div class="footer">
+    <p>2017 Twain Creative Forms. All rights reserved | Design by <span style="color: red;">W3layouts</span></p> 
+</div><!--footer-->
+</div><!--bg-->
+</div><!--outer-->
+
+<script>
+    // Disable form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Get the forms we want to add validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+    </body>
+</html>
